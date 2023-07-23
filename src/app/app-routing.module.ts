@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FrontLayoutComponent } from './layouts/front-layout/front-layout.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AuthAdminLayoutComponent } from './layouts/auth-admin-layout/auth-admin-layout.component';
 
 const routes: Routes = [
   {
@@ -43,7 +44,41 @@ const routes: Routes = [
       },
     ],
   },
-  { path: 'admin', component: AdminLayoutComponent },
+  {
+    path: 'admin',
+    component: AdminLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./views/admin/dashbord/dashbord.module').then(
+            (m) => m.DashbordModule
+          ),
+      },
+      {
+        path: 'addCamp',
+        loadChildren: () =>
+          import('./views/admin/add-camp-place/add-camp-place.module').then(
+            (m) => m.AddCampPlaceModule
+          ),
+      },
+      {
+        path: 'addUser',
+        loadChildren: () =>
+          import('./views/admin/add-user/add-user.module').then(
+            (m) => m.AddUserModule
+          ),
+      },
+      {
+        path: 'addtent',
+        loadChildren: () =>
+          import('./views/admin/addtent/addtent.module').then(
+            (m) => m.AddtentModule
+          ),
+      },
+    ],
+  },
+  { path: 'auth', component: AuthAdminLayoutComponent },
 ];
 
 @NgModule({
