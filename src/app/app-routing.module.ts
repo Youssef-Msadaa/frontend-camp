@@ -36,7 +36,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'services',
+        path: 'about',
         loadChildren: () =>
           import('./views/front/services/services.module').then(
             (m) => m.ServicesModule

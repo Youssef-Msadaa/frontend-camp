@@ -301,18 +301,6 @@ nav a::before {
   background-image: url(../images/camping.jpg);
   background-position: fixed;
 }
-.slides .slide:nth-child(2) {
-  background-image: url(../images/camp5.jpg);
-  background-position: fixed;
-}
-.slides .slide:nth-child(3) {
-  background-image: url(../images/camping2.jpg);
-  background-position: fixed;
-}
-.slides .slide:nth-child(4) {
-  background-image: url(../images/camping3.jpg);
-  background-position: fixed;
-}
 
 /* Slide 1 Stlye */
 #slider-wrapper {
