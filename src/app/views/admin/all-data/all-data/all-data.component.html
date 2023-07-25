@@ -1,0 +1,376 @@
+<div class="container-fluid">
+  <!-- Page Heading -->
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">All CampPlaces</h6>
+    </div>
+
+    <div class="card-body">
+      <a
+        routerLink="/admin/addstudent"
+        style="float: right"
+        class="btn btn-primary"
+        >Add CampPlace</a
+      >
+      <div class="table-responsive">
+        <table
+          class="table table-bordered"
+          id="dataTable"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+            <tr>
+              <th>FirstName</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>FirstName</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Youssef</td>
+              <td>Msadaa</td>
+              <td>25</td>
+              <td>27</td>
+              <td>ddddddd</td>
+              <td>
+                <button class="btn btn-success">Update</button>
+                <button class="btn btn-info">Details</button>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Youssef</td>
+              <td>Msadaa</td>
+              <td>25</td>
+              <td>27</td>
+              <td>ddddddd</td>
+              <td>
+                <button class="btn btn-success">Update</button>
+                <button class="btn btn-info">Details</button>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Youssef</td>
+              <td>Msadaa</td>
+              <td>25</td>
+              <td>27</td>
+              <td>ddddddd</td>
+              <td>
+                <button class="btn btn-success">Update</button>
+                <button class="btn btn-info">Details</button>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- form update start here -->
+        <form>
+          <!-- firstName validation start here -->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Firstname</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="firstName"
+              required
+              name="firstname"
+              minlength="2"
+              maxlength="20"
+            />
+          </div>
+
+          <!-- lastName validation end here -->
+
+          <!-- lastName validation start here -->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">lastname</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="lastname"
+              required
+              name="lastname"
+              minlength="2"
+              maxlength="20"
+              ngModel
+            />
+          </div>
+
+          <!-- Email validation start here -->
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="email"
+              required
+              name="email"
+            />
+          </div>
+
+          <!-- age validation start here -->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">age</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="age"
+              required
+              name="age"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Phone</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="phone"
+              name="phone"
+            />
+          </div>
+
+          <button class="btn btn-primary">Update student</button>
+        </form>
+
+        <!-- form update end here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Page Heading -->
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">All CampPlaces</h6>
+    </div>
+
+    <div class="card-body">
+      <a
+        routerLink="/admin/addstudent"
+        style="float: right"
+        class="btn btn-primary"
+        >Add CampPlace</a
+      >
+      <div class="table-responsive">
+        <table
+          class="table table-bordered"
+          id="dataTable"
+          width="100%"
+          cellspacing="0"
+        >
+          <thead>
+            <tr>
+              <th>FirstName</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>FirstName</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Youssef</td>
+              <td>Msadaa</td>
+              <td>25</td>
+              <td>27</td>
+              <td>ddddddd</td>
+              <td>
+                <button class="btn btn-success">Update</button>
+                <button class="btn btn-info">Details</button>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Youssef</td>
+              <td>Msadaa</td>
+              <td>25</td>
+              <td>27</td>
+              <td>ddddddd</td>
+              <td>
+                <button class="btn btn-success">Update</button>
+                <button class="btn btn-info">Details</button>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Youssef</td>
+              <td>Msadaa</td>
+              <td>25</td>
+              <td>27</td>
+              <td>ddddddd</td>
+              <td>
+                <button class="btn btn-success">Update</button>
+                <button class="btn btn-info">Details</button>
+                <button class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- form update start here -->
+        <form>
+          <!-- firstName validation start here -->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Firstname</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="firstName"
+              required
+              name="firstname"
+              minlength="2"
+              maxlength="20"
+            />
+          </div>
+
+          <!-- lastName validation end here -->
+
+          <!-- lastName validation start here -->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">lastname</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="lastname"
+              required
+              name="lastname"
+              minlength="2"
+              maxlength="20"
+              ngModel
+            />
+          </div>
+
+          <!-- Email validation start here -->
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="email"
+              required
+              name="email"
+            />
+          </div>
+
+          <!-- age validation start here -->
+          <div class="form-group">
+            <label for="exampleFormControlInput1">age</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="age"
+              required
+              name="age"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Phone</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="phone"
+              name="phone"
+            />
+          </div>
+
+          <button class="btn btn-primary">Update student</button>
+        </form>
+
+        <!-- form update end here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

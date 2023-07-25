@@ -1,1 +1,54 @@
-<p>addcamp-place works!</p>
+<div class="container">
+  <form>
+    <!-- firstName validation start here -->
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter A title"
+        required
+        name="Title"
+        minlength="2"
+        maxlength="20"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Description</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter A Description"
+        required
+        name="Description"
+        minlength="2"
+        maxlength="20"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Image</label>
+      <input type="file" class="form-control" email required name="Image" />
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Position</label>
+      <select class="form-control">
+        <option>Tunis</option>
+        <option>Sousse</option>
+        <option>Bizerte</option>
+        <option>Monastir</option>
+        <option>Jendouba</option>
+        <option>Kef</option>
+        <option>Mahdia</option>
+        <option>Djerba</option>
+        <option>Beja</option>
+        <option>Gabes</option>
+        <option>Ben Arous</option>
+      </select>
+    </div>
+
+    <button class="btn btn-primary">Add CampPlace</button>
+  </form>
+</div>

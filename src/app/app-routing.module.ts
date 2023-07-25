@@ -76,6 +76,13 @@ const routes: Routes = [
             (m) => m.AddtentModule
           ),
       },
+      {
+        path: 'allData',
+        loadChildren: () =>
+          import('./views/admin/all-data/all-data.module').then(
+            (m) => m.AllDataModule
+          ),
+      },
     ],
   },
   { path: 'auth', component: AuthAdminLayoutComponent },

@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#sidebar {
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+#content {
+  padding: 20px;
+  position: relative;
+}
+
+.menu-item {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.menu-item:hover {
+  background-color: #555;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+canvas {
+  max-width: 100%;
+}

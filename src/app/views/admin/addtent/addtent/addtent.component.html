@@ -1,1 +1,33 @@
-<p>addtent works!</p>
+<div class="container">
+  <form>
+    <!-- firstName validation start here -->
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Number of Places</label>
+      <input
+        type="Number"
+        class="form-control"
+        placeholder="Enter The Number of places "
+        required
+        name="nop"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">CampingId</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter the CampId"
+        required
+        name="CI"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Image</label>
+      <input type="file" class="form-control" required name="Image" />
+    </div>
+
+    <button class="btn btn-primary">Add Tent</button>
+  </form>
+</div>
