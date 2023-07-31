@@ -29,7 +29,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'campDetails',
+        path: 'cDetails',
         loadChildren: () =>
           import('./views/front/camp-details/camp-details.module').then(
             (m) => m.CampDetailsModule
@@ -40,6 +40,13 @@ const routes: Routes = [
         loadChildren: () =>
           import('./views/front/services/services.module').then(
             (m) => m.ServicesModule
+          ),
+      },
+      {
+        path: 'cCamp',
+        loadChildren: () =>
+          import('./views/front/choose-camp/choose-camp.module').then(
+            (m) => m.ChooseCampModule
           ),
       },
     ],

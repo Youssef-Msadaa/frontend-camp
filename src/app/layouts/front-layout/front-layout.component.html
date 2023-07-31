@@ -17,14 +17,24 @@
       >
     </li>
     <li>
-      <a routerLink="/register"
+      <a routerLink="/register" *ngIf="!sh.testLog"
         ><img src="../../../assets/links/assets/images/icon-4.png" alt="" />
         <em>Register</em></a
       >
     </li>
     <li>
-      <a routerLink="/login"
+      <a routerLink="/login" *ngIf="!sh.testLog"
         ><span class="fa fa-users"></span> <em>Login</em></a
+      >
+    </li>
+    <li>
+      <a routerLink="/cCamp" *ngIf="sh.testLog"
+        ><span class="fa fa-newspaper-o"></span> <em>Choose Camp</em></a
+      >
+    </li>
+    <li>
+      <a routerLink="/cDetails" *ngIf="sh.testLog"
+        ><span class="fa fa-info-circle"></span> <em>Camp Details</em></a
       >
     </li>
   </ul>

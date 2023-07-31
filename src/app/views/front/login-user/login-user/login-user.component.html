@@ -10,6 +10,7 @@
             <fieldset>
               <input
                 name="email"
+                [(ngModel)]="data.email"
                 type="text"
                 class="form-control"
                 id="email"
@@ -23,6 +24,7 @@
               <input
                 name="password"
                 type="password"
+                [(ngModel)]="data.password"
                 class="form-control"
                 id="password"
                 placeholder="Enter a password"
@@ -32,7 +34,12 @@
           </div>
           <div class="col-md-12">
             <fieldset>
-              <button type="submit" id="form-submit" class="button">
+              <button
+                (click)="login()"
+                type="submit"
+                id="form-submit"
+                class="button"
+              >
                 Send Now
               </button>
             </fieldset>

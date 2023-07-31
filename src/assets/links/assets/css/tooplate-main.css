@@ -337,15 +337,7 @@ nav a::before {
   background-size: cover;
   overflow: hidden;
 }
-#image-slider ul li:nth-child(1) {
-  background-image: url(../images/full-bg-01.jpg);
-}
-#image-slider ul li:nth-child(2) {
-  background-image: url(../images/full-bg-02.jpg);
-}
-#image-slider ul li:nth-child(3) {
-  background-image: url(../images/full-bg-03.jpg);
-}
+
 #image-slider ul li.active-img {
   left: 0;
 }

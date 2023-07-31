@@ -14,6 +14,7 @@
                 class="form-control"
                 id="fname"
                 placeholder="Your First name..."
+                [(ngModel)]="data.firstName"
                 required=""
               />
             </fieldset>
@@ -26,6 +27,7 @@
                 type="text"
                 class="form-control"
                 id="lname"
+                [(ngModel)]="data.lastName"
                 placeholder="Your Last name..."
                 required=""
               />
@@ -38,6 +40,7 @@
                 type="text"
                 class="form-control"
                 id="email"
+                [(ngModel)]="data.email"
                 placeholder="Your email..."
                 required=""
               />
@@ -50,6 +53,7 @@
                 type="password"
                 class="form-control"
                 id="password"
+                [(ngModel)]="data.password"
                 placeholder="Enter a password"
                 required=""
               />
@@ -57,7 +61,12 @@
           </div>
           <div class="col-md-12">
             <fieldset>
-              <button type="submit" id="form-submit" class="button">
+              <button
+                type="submit"
+                id="form-submit"
+                (click)="registerUser()"
+                class="button"
+              >
                 Send Now
               </button>
             </fieldset>
