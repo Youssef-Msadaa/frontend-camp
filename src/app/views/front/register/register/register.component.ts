@@ -16,22 +16,22 @@ export class RegisterComponent {
     password: '',
   };
   constructor(public shareService: ShareUserService, private router: Router) {}
-
+  messageError: any;
   registerUser() {
     console.log(this.data);
     this.shareService.createUser('user/register', this.data).subscribe(
       (createdUser) => {
         this.router.navigate(['/login']);
-        console.log(createdUser);
+      },
+      (err: HttpErrorResponse) => {
+        alert('You are already connected please log in');
         this.data = {
           firstName: '',
           lastName: '',
           email: '',
           password: '',
         };
-      },
-      (err: HttpErrorResponse) => {
-        console.log(err);
+        return false;
       }
     );
   }

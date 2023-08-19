@@ -65,64 +65,6 @@
   <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">All Tents</h6>
-    </div>
-
-    <div class="card-body">
-      <a
-        style="float: right"
-        class="btn btn-primary"
-        routerLink="/admin/addtent"
-        >Add Tents</a
-      >
-      <div class="table-responsive">
-        <table
-          class="table table-bordered"
-          id="dataTable"
-          width="100%"
-          cellspacing="0"
-        >
-          <thead>
-            <tr>
-              <th>Number Of Places</th>
-              <th>CampId</th>
-              <th>Image</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <th>Number Of Places</th>
-              <th>CampId</th>
-              <th>Image</th>
-              <th>Actions</th>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <td>Youssef</td>
-              <td>Msadaa</td>
-
-              <td>ddddddd</td>
-              <td>
-                <button class="btn btn-success">Update</button>
-                <button class="btn btn-info">Details</button>
-                <button class="btn btn-danger">Delete</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid">
-  <!-- Page Heading -->
-
-  <!-- DataTales Example -->
-  <div class="card shadow mb-4">
-    <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary">All Users</h6>
     </div>
 
@@ -144,9 +86,8 @@
             <tr>
               <th>FirstName</th>
               <th>Lastname</th>
-              <th>Age</th>
-              <th>Phone</th>
               <th>Email</th>
+              <th>Password</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -160,11 +101,11 @@
             </tr>
           </tfoot>
           <tbody>
-            <tr>
-              <td>Youssef</td>
-              <td>Msadaa</td>
-              <td>25</td>
-              <td>27</td>
+            <tr *ngFor="let item of Users; index as i">
+              <td>{{ item[i].firstName }}</td>
+              <td>{{ item[i].lastName }}</td>
+              <td>{{ item[i].email }}</td>
+              <td>{{ item[i].password }}</td>
               <td>
                 <button class="btn btn-success">Update</button>
                 <button class="btn btn-info">Details</button>

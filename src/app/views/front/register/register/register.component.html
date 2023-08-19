@@ -59,6 +59,13 @@
               />
             </fieldset>
           </div>
+          <div class="col-md-10 m-auto">
+            <fieldset>
+              <div class="alert alert-danger" *ngIf="messageError">
+                {{ messageError }}
+              </div>
+            </fieldset>
+          </div>
           <div class="col-md-12">
             <fieldset>
               <button

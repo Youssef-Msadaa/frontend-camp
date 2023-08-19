@@ -22,14 +22,17 @@ export class LoginUserComponent {
         this.shareService.saveToken(this.datatoken.mytoken);
         this.shareService.testLog = true;
         this.datatoken = '';
+
+        this.route.navigate(['/cCamp']);
+      },
+      (err: HttpErrorResponse) => {
+        alert('password or email invalid');
         this.data = {
           email: '',
           password: '',
         };
-        this.route.navigate(['/cCamp']);
-      },
-      (err: HttpErrorResponse) => {
         console.log(err);
+        return false;
       }
     );
   }
